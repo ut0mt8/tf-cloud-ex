@@ -4,7 +4,7 @@ resource "fakewebservices_vpc" "primary_vpc" {
 }
 
 resource "fakewebservices_server" "servers" {
-  count = 3
+  count = 4
 
   name = "Server ${count.index + 1}"
   type = "t2.medium"
