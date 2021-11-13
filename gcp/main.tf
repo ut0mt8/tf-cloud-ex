@@ -2,7 +2,6 @@ resource "google_compute_instance" "test-instance" {
   name         = "test-instance"
   machine_type = "e2-micro"
   project      = var.project
-  region       = var.region
   zone         = var.default_zone
 
   boot_disk {
