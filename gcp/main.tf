@@ -11,6 +11,6 @@ resource "google_compute_instance" "test-instance" {
   }
 
   network_interface {
-    network = "vpc-shared-rmazelier-dev"
+    subnetwork = "projects/rmazelier-admin/regions/europe-west1/subnetworks/vpc-shared-rmazelier-dev-subnet"
   }
 }

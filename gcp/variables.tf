@@ -1,3 +1,5 @@
+variable "GOOGLE_CREDENTIALS" {}
+
 variable "project_name" {
   type    = string
   default = "rmazelier-dev-axaxaxb1"
