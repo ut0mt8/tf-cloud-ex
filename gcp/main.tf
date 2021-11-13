@@ -1,8 +1,9 @@
 resource "google_compute_instance" "test-instance" {
-  name         = "test-instance"
-  machine_type = "e2-medium"
-  project      = var.project
-  zone         = var.default_zone
+  name                      = "test-instance"
+  machine_type              = "e2-medium"
+  project                   = var.project
+  zone                      = var.default_zone
+  allow_stopping_for_update = true
 
   boot_disk {
     initialize_params {
