@@ -5,7 +5,7 @@ variable "project_name" {
 
 variable "project" {
   type    = string
-  default = "rmazelier-dev-axaxaxb1"
+  default = "rmazelier-dev-a484afb4"
 }
 
 variable "default_zone" {
