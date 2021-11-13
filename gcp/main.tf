@@ -1,14 +1,15 @@
 resource "google_compute_instance" "test-instance" {
- name         = "test-instance"
- machine_type = "e2-micro"
+  name         = "test-instance"
+  machine_type = "e2-micro"
+  project      = "rmazelier-dev"
 
- boot_disk {
-   initialize_params {
-     image = "debian-cloud/debian-11"
-   }
- }
+  boot_disk {
+    initialize_params {
+      image = "debian-cloud/debian-11"
+    }
+  }
 
- network_interface {
-   network = "vpc-shared-rmazelier-dev"
- }
+  network_interface {
+    network = "vpc-shared-rmazelier-dev"
+  }
 }
