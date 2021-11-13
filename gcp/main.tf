@@ -1,8 +1,9 @@
 resource "google_compute_instance" "test-instance" {
   name         = "test-instance"
   machine_type = "e2-micro"
-  project      = "rmazelier-dev"
-  zone         = "europe-west1-d"
+  project      = var.project_id
+  region       = var.region
+  zone         = var.defautl_zone
 
   boot_disk {
     initialize_params {
