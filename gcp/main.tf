@@ -1,6 +1,6 @@
 resource "google_compute_instance" "test-instance" {
   name         = "test-instance"
-  machine_type = "e2-micro"
+  machine_type = "e2-medium"
   project      = var.project
   zone         = var.default_zone
 
